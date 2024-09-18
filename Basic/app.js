@@ -85,7 +85,7 @@ switch (day) {
 }
 
 
-alert("Hello user. Welcome");
-prompt("Type your name");
-console.error("ERROR");
-console.warn("Warning")
+let firstName = prompt("Enter your first name");
+let lastName = prompt("Enter your last name");
+let alt = "Welcome"+firstName+lastName;
+alert(alt);
