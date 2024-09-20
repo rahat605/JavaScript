@@ -39,5 +39,6 @@ console.log(mash);
 
 
 // task2
-let lan=["C","C++","C#","html"."javascriptg","pyhthon,"java","C#","SQL"];
-    lanrese
+let lan=["C","C++","C#","html","javascript","python","java","C#","SQL"];
+lan.reverse();
+console.log(lan.indexOf("javascript"));
