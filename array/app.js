@@ -10,3 +10,6 @@ months.shift();
 months.shift();
 months.unshift("June");
 months.unshift("July");
+
+let str = "Rahatg";
+console.log(str.slice(-2));
