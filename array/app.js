@@ -42,3 +42,51 @@ console.log(mash);
 let lan=["C","C++","C#","html","javascript","python","java","C#","SQL"];
 lan.reverse();
 console.log(lan.indexOf("javascript"));
+
+
+//Tik Tac Toe Game 
+let game = [['X',null,'O'],[null,'X',null],['O',null,'X']];
+console.log(game);
+game[0][1]="O";
+
+//Practice Question 1
+let num = [7,9,0,-2];
+let n = 3;
+console.log(num.slice(0,n));
+
+//Practice Question 2
+let num2 = [7,9,0,-2];
+let n2 = 3;
+console.log(num.slice(-n));
+
+//Practice Question 3
+let str2 = "This is task 3";
+if (str2.length==0){
+    console.log("This is an empty string");
+}else{
+    console.log("This is not an empty string");
+}
+
+//Practice Question 4
+let str3 = "HeLlO My FrieND";
+let idx = 3;
+
+if (str3[idx]==str3[idx].toLowerCase()){
+    console.log("The character is lower case");
+}else{
+    console.log("The character is not lower case");
+}
+
+//Practice Question 5
+let str4 = " HELLO    ";
+console.log(str4.trim());
+
+//Practice Question 6
+let arr2 = ["Rahat","Kuril",25,6];
+let elem = "Rahat";
+
+if(arr2.indexOf(elem)!=-1){
+    console.log("Element does exists on the array");
+}else{
+    console.log("Element does not exists on the array");
+}
