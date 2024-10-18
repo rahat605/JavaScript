@@ -38,3 +38,12 @@ for (let i=n; i<=n*10; i++){
         console.log(i);
     }
 }
+
+//user input odd number 
+let n2 = prompt("Enter the number you want to check =  ");
+n2 = parseInt(n2);
+if(n2%2==!0){
+    console.log("The number is odd number");
+}else{
+    console.log("The number is an even number");
+}
