@@ -47,3 +47,38 @@ if(n2%2==!0){
 }else{
     console.log("The number is an even number");
 }
+
+for (let i=1; i<=3; i++){
+    console.log(`For loop ${i}`);
+    for(let j=1; j<=3; j++){
+        console.log(j);
+    }
+}
+
+
+// while loop
+let i=0;
+while (i<=10){
+    console.log(i);
+    i=i+1;
+}
+
+// Guessing Game using while loop
+let fav = "Iron Man";
+let guess = prompt("Guess the movie name");
+while(guess!=fav){
+    if(guess=="quit"){
+        console.log("You have quit the Game!");
+        break;
+    }
+    guess = prompt("Wrong Guess Pleae try again");
+}
+if(guess==fav){
+    console.log("You are right, Congratulations!!");
+}
+
+// Loops with Array
+let fruits = ["Apple","Mango","Banana","Litchi","Orange"];
+for (let i=0; i<fruits.length;i++){
+    console.log(fruits[i]);
+}
