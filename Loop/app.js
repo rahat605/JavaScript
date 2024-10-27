@@ -80,5 +80,19 @@ if(guess==fav){
 // Loops with Array
 let fruits = ["Apple","Mango","Banana","Litchi","Orange"];
 for (let i=0; i<fruits.length;i++){
-    console.log(fruits[i]);
+    console.log(i, fruits[i]);
+}
+
+for (let j=fruits.length-1; j>=0; j--){
+    console.log(j, fruits[j]);
+}
+
+//Nested loop with nested array
+let heroes = [["Iron Man","Spider Man","Thor"],["Super Man","Wonder Women","Flash"]]
+
+for (let i=0; i<heroes.length; i++){
+    console.log(i, heroes[i]);
+    for(let j=0; j<heroes[i].length; j++){
+        console.log(heroes[i][j]);
+    }
 }
