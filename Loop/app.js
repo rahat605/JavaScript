@@ -88,11 +88,26 @@ for (let j=fruits.length-1; j>=0; j--){
 }
 
 //Nested loop with nested array
-let heroes = [["Iron Man","Spider Man","Thor"],["Super Man","Wonder Women","Flash"]]
+let heroes = [["Iron Man","Spider Man","Thor"],["Super Man","Wonder Women","Flash"]];
 
 for (let i=0; i<heroes.length; i++){
     console.log(i, heroes[i]);
     for(let j=0; j<heroes[i].length; j++){
-        console.log(heroes[i][j]);
+        console.log(`The name of those heroes ${heroes[i][j]}`);
+    }
+}
+
+//For of loop
+let fruits2 = ["Apple","Mango","Banana","Litchi","Orange"];
+for (fruit of fruits){
+    console.log(i);
+}
+
+
+//Nested For Of Loop
+let heroes2 = [["Iron Man","Spider Man","Thor"],["Super Man","Wonder Women","Flash"]];
+for(hero of heroes2){
+    for(hname of hero){
+        console.log(hname);
     }
 }
