@@ -103,8 +103,10 @@ while(true){
     if(guess == ran){
         console.log("You got it right!! Congratulations");
         break;
-     } else{
-        guess = prompt("You are wrong. Try again!");
-        }
+     } else if(guess > ran){
+       guess = prompt("Your guess is too big! Please try again");
+     } else if(guess < ran){
+        guess = prompt("Your guess is too small! Please try again!");
+     }
     
 }
