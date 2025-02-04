@@ -25,7 +25,7 @@ function diceGame(){
 //Average of three number
 function averageNum(a,b,c){
     let avg = (a+b+c)/3;
-    console.log(avg);
+    console.log("The Average Number is =",avg);
 }
 
 //Multiplication table
@@ -52,6 +52,11 @@ function concateString(str){
     }
     console.log(result);
 }
+
+
+let randooom = Math.ceil(Math.random()*6);
+console.log("Random number is ",randooom);
+
 
 hello(); //calling hello and user input function
 print1ton(5); //calling the user input to num count function
