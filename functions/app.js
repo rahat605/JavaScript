@@ -57,6 +57,8 @@ function concateString(str){
 let randooom = Math.ceil(Math.random()*6);
 console.log("Random number is ",randooom);
 
+// testing
+
 
 hello(); //calling hello and user input function
 print1ton(5); //calling the user input to num count function
