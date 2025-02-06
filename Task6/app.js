@@ -75,7 +75,7 @@ function findVowel(){
 
 // Task 5
 let start = 1;
-let end = 55;
+let end = 100;
 function genRandom(){
     console.log(Math.floor(Math.random()*end)+start);
 }
