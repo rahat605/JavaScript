@@ -11,5 +11,3 @@ console.log(rpt);
 let msg2 = "help!";
 let out = msg2.trim().toUpperCase();
 console.log(out);
-
-// Hello guys
