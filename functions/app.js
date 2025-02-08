@@ -57,7 +57,12 @@ function concateString(str){
 let randooom = Math.ceil(Math.random()*6);
 console.log("Random number is ",randooom);
 
-// testing
+// Try and catch
+try{
+    console.log(a);
+}catch{
+    console.log("Variable a doesn't exists");
+}
 
 
 hello(); //calling hello and user input function
