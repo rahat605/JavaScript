@@ -64,7 +64,19 @@ try{
     console.log("Variable a doesn't exists");
 }
 
+// Arrow function
+const sum = (a,b) => {
+    console.log(a+b);
+    // return a+b;
+}
 
+const cube = n => {
+    return n*n;
+}
+
+
+cube(3);
+sum(1,2);
 hello(); //calling hello and user input function
 print1ton(5); //calling the user input to num count function
 printPoem();
