@@ -74,6 +74,25 @@ const cube = n => {
     return n*n;
 }
 
+const mul = (a,b) => a*b;
+
+// Time out function
+console.log("Hello I am waiting for your reply!!");
+setTimeout(()=>{
+    console.log("Hey How are you?");
+},2000);
+console.log("Typing......");
+
+// Set Interval function 
+console.log("Testing set time out");
+setInterval(()=>{
+    // console.log("Hello");
+},2000);
+setInterval(()=>{
+    // console.log("Hi");
+},2000);
+
+
 
 cube(3);
 sum(1,2);
