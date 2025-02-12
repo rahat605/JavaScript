@@ -10,7 +10,7 @@ let reduceNum = [1,2,3,4]; //Example of reduce
 let finalVal = reduceNum.reduce((res,el)=>res+el);
 console.log(finalVal);
 
-let testArr = [1,2,3,4,13,6,7,8,9]; //Fine the max value using reduce
+let testArr = [1,2,3,4,13,6,7,8,9]; //Find the max value using reduce
 let maxVal = testArr.reduce((max,el)=> {
     if(max<el){
         return el;
