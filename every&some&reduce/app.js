@@ -19,3 +19,4 @@ let maxVal = testArr.reduce((max,el)=> {
     }
 });
 console.log(maxVal);
+// Testing
