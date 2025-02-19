@@ -17,7 +17,7 @@ let maxVal = testArr.reduce((max, el) => {
   } else {
     return max;
   }
-}); 
+});
 console.log(maxVal);
 
 function sum(a, b = 2) {
@@ -29,3 +29,48 @@ console.log(sum(1));
 // Spread
 let arr = [1, 2, 3, 4, 5];
 console.log(Math.max(...arr));
+
+// spred with object literals
+const data = {
+  email: "rahat@gmail.com",
+  password: "abcd",
+};
+
+const dataCopy = { ...data, id: 10 };
+console.log(dataCopy);
+
+// Rest
+function sum(...args) {
+  for (let i = 0; i < args.length; i++) {
+    console.log("You gave us : ", args[i]);
+  }
+}
+
+function sum2(...args) {
+  return args.reduce((sum, el) => sum + el);
+}
+
+function min(...args) {
+  return args.reduce((min, el) => {
+    if (min > el) {
+      return el;
+    } else {
+      return min;
+    }
+  });
+}
+
+// Destructuring
+let names = ["Rahat", "Borshon", "Jim", "Shahriar"];
+let [winner, runnerup, ...others] = names;
+
+const student = {
+  name: "Rahat",
+  age: 25,
+  class: 12,
+  username: "rahat605",
+  password: "abc",
+};
+
+let { username, password, name } = student;
+let { age: year, class: section } = student;
