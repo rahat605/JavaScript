@@ -5,15 +5,27 @@ btn.addEventListener("click", async()=>{
     let country = document.querySelector("input").value;
     console.log(country);
     let college = await getCollege(country);
-    console.log("college"); 
+    show(college); 
 });
+
+function show(college){
+    let list = document.querySelector("#list");
+    list.innerText = "";
+    
+    for(col of college){
+        let li = document.createElement("li");
+        li.innerText=col.name+" _____ States-> "+col["state-province"]+"___Domain->"+col.domains;
+        list.appendChild(li);
+    }
+}
+
 async function getCollege(country) {
     try{
        let res = await axios.get(url+country);
        return res.data;
     }catch(e){
         console.log("Error",e);
-        return [];
+        return "No college found!";
     }
     
 }
